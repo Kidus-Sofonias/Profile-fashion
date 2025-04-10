@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const FashionHero = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5 mt-md-5 ">
       <div className="row align-items-center">
         {/* Text Section */}
         <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">

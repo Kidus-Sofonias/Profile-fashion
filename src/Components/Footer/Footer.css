@@ -1,0 +1,76 @@
+/* Footer.css */
+
+.footer {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff9900;
+}
+
+.brand-logo span {
+  color: #000;
+}
+
+.brand-desc {
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-links,
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-links li,
+.contact-info li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.footer-bottom {
+  background-color: #555;
+  color: #fff;
+}
+
+.footer-bottom .social-icons {
+  color: #fff;
+}
+
+.footer-bottom .social-icons > *:hover {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .footer .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer .footer-bottom .social-icons {
+    margin-top: 10px;
+  }
+}
