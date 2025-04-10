@@ -1,0 +1,23 @@
+import React from "react";
+import "./ComfortSetBanner.css";
+import comfortImg from "../../assets/images/ComfortSetBanner.png";
+
+const ComfortSetBanner = () => {
+  return (
+    <section className="comfort-banner container text-center my-5">
+      <div className="banner-wrapper position-relative">
+        <img
+          src={comfortImg}
+          alt="Comfortable Sets for Women"
+          className="img-fluid rounded-4 border border-primary border-3"
+        />
+        <div className="banner-text position-absolute top-50 start-50 translate-middle px-3">
+          Comfortable Sets for Women
+        </div>
+      </div>
+      <button className="btn shop-btn mt-4">SHOP NOW</button>
+    </section>
+  );
+};
+
+export default ComfortSetBanner;
