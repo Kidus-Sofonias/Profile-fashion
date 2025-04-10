@@ -1,9 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./WhoWeAre.css";
-import image2 from "../../assets/images/WhoWeAre.png"
+import image2 from "../../assets/images/WhoWeAre.png";
+import img1 from "../../assets/images/home-image-1.png";
+import img2 from "../../assets/images/home-image-2.png";
+import img3 from "../../assets/images/home-image-3.png";
 
 const WhoWeAre = () => {
+  const fashionLooks = [img1, img2, img3];
+
   return (
     <div className="container my-5">
       <div className="row bg-light rounded-4 p-4 align-items-center who-we-are-container">
@@ -30,6 +35,20 @@ const WhoWeAre = () => {
             every day feel like a runway.
           </p>
         </div>
+      </div>
+
+      {/* Fashion Looks Gallery */}
+      <div className="row mt-5 text-center">
+        {fashionLooks.map((imgSrc, index) => (
+          <div key={index} className="col-md-4 mb-4">
+            <img
+              src={imgSrc}
+              alt={`Fashion Look ${index + 1}`}
+              className="img-fluid rounded-1"
+              style={{ maxHeight: "400px", objectFit: "cover" }}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
