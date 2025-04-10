@@ -1,0 +1,34 @@
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.nav_link:hover {
+  color: var(--primary-color);
+}
+
+.brand{
+  display: flex;
+}
+
+.img-wrapper{
+  width: 15vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper img{
+  width: 100%;
+  height: auto;
+}
+
+.logo-text {
+  color: #E79405;
+  margin-top: 10px;
+  font-size: 26px;
+}
+
+.nav-item {
+  font-size: 20px;
+}

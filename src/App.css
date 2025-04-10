@@ -1,0 +1,10 @@
+#root {
+  --primary-color: #ffd700;
+}
+
+.content {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+

@@ -1,0 +1,59 @@
+.fashion-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  background-color: #fff;
+  font-family: 'Georgia', serif;
+}
+
+.fashion-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.fashion-text h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.fashion-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.discover-btn {
+  background-color: #f5c77e;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.discover-btn:hover {
+  background-color: #e6b865;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+}
+
+.fashion-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.fashion-image img {
+  max-width: 300px;
+  border-radius: 2rem;
+  object-fit: cover;
+}
