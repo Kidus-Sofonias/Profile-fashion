@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./FashionHero.css";
 import image from "../../assets/images/home1.png";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,9 +19,12 @@ const FashionHero = () => {
             that blend comfort, culture, and sophistication. Shop now for
             abayas, hijabs, thobes, and more!
           </p>
-          <button className="btn btn-warning rounded-pill px-4 py-2 mt-3 discover-btn">
+          <Link
+            to="/about"
+            className="btn btn-warning rounded-pill px-4 py-2 mt-3 discover-btn"
+          >
             DISCOVER MORE <span className="ms-2">→</span>
-          </button>
+          </Link>
         </div>
 
         {/* Image Section */}

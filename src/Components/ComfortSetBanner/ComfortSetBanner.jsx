@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ComfortSetBanner.css";
 import comfortImg from "../../assets/images/ComfortSetBanner.png";
 
@@ -9,13 +10,15 @@ const ComfortSetBanner = () => {
         <img
           src={comfortImg}
           alt="Comfortable Sets for Women"
-          className="img-fluid rounded-4 border border-primary border-3"
+          className="img-fluid rounded-4 border border-3"
         />
         <div className="banner-text position-absolute top-50 start-50 translate-middle px-3">
           Comfortable Sets for Women
         </div>
       </div>
-      <button className="btn shop-btn mt-4">SHOP NOW</button>
+      <Link to="/shop" className="btn shop-btn mt-4">
+        SHOP NOW
+      </Link>
     </section>
   );
 };

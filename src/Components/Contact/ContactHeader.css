@@ -1,0 +1,42 @@
+.contact-header {
+  display: flex;
+  align-items: center;
+  background-color: #242c3c;
+  border-radius: 30px;
+  padding: 20px 30px;
+  color: white;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-left {
+  flex: 0 0 auto;
+}
+
+.contact-avatar {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.contact-right {
+  margin-left: 20px;
+}
+
+.contact-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+  font-family: "Georgia", serif;
+  color: white;
+}
+
+.contact-subtext {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #ffbca7;
+  margin-top: 10px;
+}
