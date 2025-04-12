@@ -16,7 +16,7 @@ const ComfortSetBanner = () => {
           Comfortable Sets for Women
         </div>
       </div>
-      <Link to="/shop" className="btn shop-btn mt-4">
+      <Link to="/contact" className="btn shop-btn mt-4">
         SHOP NOW
       </Link>
     </section>
