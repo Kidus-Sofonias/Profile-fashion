@@ -2,32 +2,43 @@
   background-color: var(--primary-color);
 }
 
-.nav_link:hover {
+.navbar-nav {
+  margin-right: 0;
+  gap: 16px;
+}
+
+.whole-container{
+  width: 80% !important;
+}
+
+.nav-link:hover {
   color: var(--primary-color);
 }
 
-.brand{
+.brand {
   display: flex;
+  align-items: center;
 }
 
-.img-wrapper{
-  width: 15vh;
-  max-width: 100%;
+.img-wrapper {
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.img-wrapper img{
-  width: 50px;
+.img-wrapper img {
+  width: 100%;
+  height: auto;
 }
 
 .logo-text {
-  color: #E79405;
-  margin-top: 10px;
-  font-size: 26px;
+  color: #e79405;
+  margin: 0 0 0 8px;
+  font-size: 22px;
 }
 
 .nav-item {
-  font-size: 20px;
+  font-size: 18px;
 }
