@@ -1,10 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Footer.css";
 import {
   FaInstagram,
   FaTiktok,
   FaFacebookF,
-//   FaXTwitter,
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
@@ -12,7 +12,12 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <motion.footer
+      className="footer"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="footer-top container py-5">
         <div className="row text-center text-md-start">
           {/* Brand Info */}
@@ -71,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

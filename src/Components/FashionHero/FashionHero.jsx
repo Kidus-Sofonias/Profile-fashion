@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./FashionHero.css";
 import image from "../../assets/images/home1.png";
@@ -8,8 +9,12 @@ const FashionHero = () => {
   return (
     <div className="container py-5 mt-md-5 ">
       <div className="row align-items-center">
-        {/* Text Section */}
-        <div className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+        <motion.div
+          className="col-lg-6 text-center text-lg-start mb-4 mb-lg-0"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h1 className="fw-bold display-5">
             Discover elegant <br /> and modest fashion
           </h1>
@@ -25,17 +30,21 @@ const FashionHero = () => {
           >
             DISCOVER MORE <span className="ms-2">→</span>
           </Link>
-        </div>
+        </motion.div>
 
-        {/* Image Section */}
-        <div className="col-lg-6 text-center">
+        <motion.div
+          className="col-lg-6 text-center"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <img
             src={image}
             alt="Modest Fashion"
             className="img-fluid rounded-4 shadow fashion-img"
             style={{ maxWidth: "300px" }}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

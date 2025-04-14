@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./Nav.css";
 import logo from "../../assets/images/nav-logo.png";
 
@@ -19,7 +20,12 @@ function Nav() {
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm">
+    <motion.nav
+      className="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm"
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="whole-container container-fluid">
         <Link
           className="navbar-brand brand align-items-center"
@@ -80,7 +86,7 @@ function Nav() {
           </ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }
 
