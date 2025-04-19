@@ -8,6 +8,7 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaTelegramPlane,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -29,10 +30,30 @@ const Footer = () => {
               Fashion that's accessible, affordable, and undeniably stylish
             </p>
             <div className="social-icons">
-              <FaInstagram />
-              <FaTiktok />
-              <FaFacebookF />
-              {/* <FaXTwitter /> */}
+              <a
+                href="https://www.instagram.com/profile_fashion_31?igsh=MTk3Znd1dzc2YWhpcQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://www.tiktok.com/@profilefashion?_t=ZM-8vaE6jHjR5D&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTiktok />
+              </a>
+              <a
+                href="https://t.me/profile_fashion"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTelegramPlane />
+              </a>
+              <a href="">
+                <FaFacebookF />
+              </a>
             </div>
           </div>
 
@@ -69,10 +90,30 @@ const Footer = () => {
         <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
           <p className="mb-2 mb-md-0">© 2025 All Rights Reserved.</p>
           <div className="social-icons">
-            <FaInstagram />
-            <FaTiktok />
-            <FaFacebookF />
-            {/* <FaXTwitter /> */}
+            <a
+              href="https://www.instagram.com/profile_fashion_31?igsh=MTk3Znd1dzc2YWhpcQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.tiktok.com/@profilefashion?_t=ZM-8vaE6jHjR5D&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTiktok />
+            </a>
+            <a
+              href="https://t.me/profile_fashion"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTelegramPlane />
+            </a>
+            <a href="">
+              <FaFacebookF />
+            </a>
           </div>
         </div>
       </div>
